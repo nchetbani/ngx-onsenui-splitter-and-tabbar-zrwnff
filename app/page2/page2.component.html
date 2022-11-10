@@ -1,0 +1,17 @@
+<ons-toolbar>
+  <div class="center">test</div>
+  <div class="right">
+    <ons-toolbar-button (click)="toggleMenu()">
+      <ons-icon icon="md-menu"></ons-icon>
+    </ons-toolbar-button>
+  </div>
+</ons-toolbar>
+
+<ons-tabbar position="auto" modifier="autogrow white-content" swipeable #tabbar>
+  <div class="tabbar__content"></div>
+  <div class="tabbar">
+    <ons-tab label="home" icon="ion-home" [page]="tab1" active></ons-tab>
+    <ons-tab label="edit" icon="ion-edit" [page]="tab2"></ons-tab>
+    <ons-tab label="anim" icon="ion-film-marker" [page]="tab3"></ons-tab>
+  </div>
+</ons-tabbar>
